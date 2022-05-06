@@ -368,19 +368,21 @@ p a:hover {
 /*    margin-top: 3vh;*/
 /*    position: absolute;*/
 /*    width: 6.8vw;*/
-    height: 19.7vh;
+    height: 18.6vh;
     padding: 0;
+    margin: 0.5vh;
 /*    margin-left: -1.9vh;*/
 /*    margin-left: -6.8vw;*/
     background-color: rgb(255, 29, 37);
     opacity: 0;
     transition: .5s all ease;
+    border-radius: 1.5vh;
 }
 
 .titoloprog {
     color: black;
-    font-size: 2.1vh;
-    padding: 0.4vh;
+    font-size: 1.9vh;
+    padding: 0.5vh;
 }
 
 .progetto:hover .infoprog {
