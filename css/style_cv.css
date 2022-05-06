@@ -157,7 +157,7 @@ i {
 }
 
 .nav {
-    border: 0.1vh solid black;
+    border: 0.2vh solid black;
     background-color: white;
     margin-bottom: 2vh;
     padding-right: 2vh;
@@ -167,7 +167,7 @@ i {
 }
 
 .sidebar {
-    border: 0.1vh solid black;
+    border: 0.2vh solid black;
     padding-top: 2vh;
     padding-left: 2vh;
     padding-right: 2vh;
@@ -239,7 +239,7 @@ p a:hover {
     margin-bottom: 5vh;
     height: 85vh;
     overflow-y: auto;
-    border-right: solid 0.1vh black;
+    border-right: solid 0.2vh black;
 }
 
 .final{
@@ -259,7 +259,7 @@ ul {
 .footer {
     color: black;
     font-size: 1.6vh;
-    border: 0.1vh solid black;
+    border: 0.2vh solid black;
     background-color: white;
     padding-right: 2vh;
     padding-left: 2vh;
@@ -356,7 +356,7 @@ ul {
     }
     
     .nav {
-        border: 0.1vh solid black;
+        border: 0.2vh solid black;
         background-color: white;
         margin-bottom: 1.5vh;
         padding-right: 1.5vh;
@@ -366,7 +366,7 @@ ul {
     }
     
     .sidebar {
-        border: 0.1vh solid black;
+        border: 0.2vh solid black;
         padding-top: 1.5vh;
         padding-left: 1.5vh;
         padding-right: 1.5vh;
@@ -400,7 +400,7 @@ ul {
     .footer {
         color: black;
         font-size: 0.7vh;
-        border: 0.1vh solid black;
+        border: 0.2vh solid black;
         background-color: white;
         padding-right: 1.5vh;
         padding-left: 1.5vh;

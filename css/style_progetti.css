@@ -157,7 +157,7 @@ i {
 }
 
 .nav {
-    border: 0.1vh solid black;
+    border: 0.2vh solid black;
     background-color: white;
     margin-bottom: 2vh;
     padding-right: 2vh;
@@ -167,7 +167,7 @@ i {
 }
 
 .sidebar {
-    border: 0.1vh solid black;
+    border: 0.2vh solid black;
     padding-top: 2vh;
     padding-left: 2vh;
     padding-right: 2vh;
@@ -247,7 +247,7 @@ p a:hover {
 }
 
 .contribution {
-    border: 0.1vh solid black;
+    border: 0.2vh solid black;
     padding-left: 2vh;
     padding-right: 2vh;
 /*    color: rgb(255, 29, 37)*/
@@ -362,7 +362,7 @@ ul li {
 .footer {
     color: black;
     font-size: 1.6vh;
-    border: 0.1vh solid black;
+    border: 0.2vh solid black;
     background-color: white;
     padding-right: 2vh;
     padding-left: 2vh;
@@ -506,7 +506,7 @@ ul li {
     }
     
     .nav {
-        border: 0.1vh solid black;
+        border: 0.2vh solid black;
         background-color: white;
         margin-bottom: 1.5vh;
         padding-right: 1.5vh;
@@ -516,7 +516,7 @@ ul li {
     }
     
     .sidebar {
-        border: 0.1vh solid black;
+        border: 0.2vh solid black;
         padding-top: 1.5vh;
         padding-left: 1.5vh;
         padding-right: 1.5vh;
@@ -602,7 +602,7 @@ ul li {
     .footer {
         color: black;
         font-size: 0.7vh;
-        border: 0.1vh solid black;
+        border: 0.2vh solid black;
         background-color: white;
         padding-right: 1.5vh;
         padding-left: 1.5vh;

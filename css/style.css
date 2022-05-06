@@ -161,7 +161,7 @@ p a:hover {
 }
 
 .nav {
-    border: 0.1vh solid black;
+    border: 0.2vh solid black;
     background-color: white;
     margin-bottom: 2vh;
     padding-right: 2vh;
@@ -175,7 +175,7 @@ p a:hover {
 }
 
 .sidebar {
-    border: 0.1vh solid black;
+    border: 0.2vh solid black;
     padding-top: 2vh;
     padding-left: 2vh;
     padding-right: 2vh;
@@ -353,7 +353,7 @@ p a:hover {
 }
 
 .foto{
-    border: 0.1vh solid black;
+    border: 0.2vh solid black;
     margin-top: 3vh;
     width: 6.8vw;
     height: 20vh;
@@ -364,7 +364,7 @@ p a:hover {
 }
 
 .infoprog {
-/*    border: 0.1vh solid black;*/
+/*    border: 0.2vh solid black;*/
 /*    margin-top: 3vh;*/
 /*    position: absolute;*/
 /*    width: 6.8vw;*/
@@ -425,7 +425,7 @@ h1 a:hover {
 .footer {
     color: black;
     font-size: 1.6vh;
-    border: 0.1vh solid black;
+    border: 0.2vh solid black;
     background-color: white;
     padding-right: 2vh;
     padding-left: 2vh;
@@ -596,7 +596,7 @@ h1 a:hover {
     }
     
     .nav {
-        border: 0.1vh solid black;
+        border: 0.2vh solid black;
         background-color: white;
         margin-bottom: 1.5vh;
         padding-right: 1.5vh;
@@ -606,7 +606,7 @@ h1 a:hover {
     }
     
     .sidebar {
-        border: 0.1vh solid black;
+        border: 0.2vh solid black;
         padding-top: 1.5vh;
         padding-left: 1.5vh;
         padding-right: 1.5vh;
@@ -692,7 +692,7 @@ h1 a:hover {
     }
     
    .foto{
-       border: 0.1vh solid black;
+       border: 0.2vh solid black;
        margin-top: 1.5vh;
        width: 6.8vw;
        height: 10vh;
@@ -708,7 +708,7 @@ h1 a:hover {
 */
     
     .infoprog {
-/*        border: 0.1vh solid black;*/
+/*        border: 0.2vh solid black;*/
 /*
         margin-top: 1.5vh;
         width: 6.8vw;
@@ -743,7 +743,7 @@ h1 a:hover {
     .footer {
         color: black;
         font-size: 0.7vh;
-        border: 0.1vh solid black;
+        border: 0.2vh solid black;
         background-color: white;
         padding-right: 1.5vh;
         padding-left: 1.5vh;
