@@ -256,7 +256,15 @@ p a:hover {
     padding: 0;
 }
 
-.fotoback01 {
+.fotobackNSSI {
+  width: 100%;
+  display: block;
+  height: 20vh;
+  background: url('https://i.ibb.co/ts6q11n/NSSI-09.png') no-repeat center center;
+  background-size: cover;
+}
+
+.fotobackRFME {
   width: 100%;
   display: block;
   height: 20vh;
@@ -264,7 +272,7 @@ p a:hover {
   background-size: cover;
 }
 
-.fotoback02 {
+.fotobackDFGP {
   width: 100%;
   display: block;
   height: 20vh;
@@ -272,7 +280,7 @@ p a:hover {
   background-size: cover;
 }
 
-.fotoback03 {
+.fotobackS {
   width: 100%;
   display: block;
   height: 20vh;
@@ -280,7 +288,7 @@ p a:hover {
   background-size: cover;
 }
 
-.fotoback04 {
+.fotobackRBT {
   width: 100%;
   display: block;
   height: 20vh;
@@ -288,7 +296,7 @@ p a:hover {
   background-size: cover;
 }
 
-.fotoback05 {
+.fotobackLOTJ {
   width: 100%;
   display: block;
   height: 20vh;
@@ -296,7 +304,7 @@ p a:hover {
   background-size: cover;
 }
 
-.fotoback06 {
+.fotobackMTIV {
   width: 100%;
   display: block;
   height: 20vh;
@@ -304,7 +312,7 @@ p a:hover {
   background-size: cover;
 }
 
-.fotoback07 {
+.fotobackWNICF {
   width: 100%;
   display: block;
   height: 20vh;
@@ -312,7 +320,7 @@ p a:hover {
   background-size: cover;
 }
 
-.fotoback08 {
+.fotobackESC {
   width: 100%;
   display: block;
   height: 20vh;
@@ -320,7 +328,7 @@ p a:hover {
   background-size: cover;
 }
 
-.fotoback09 {
+.fotobackH {
   width: 100%;
   display: block;
   height: 20vh;
@@ -328,7 +336,7 @@ p a:hover {
   background-size: cover;
 }
 
-.fotoback10 {
+.fotobackTT {
   width: 100%;
   display: block;
   height: 20vh;
@@ -336,15 +344,7 @@ p a:hover {
   background-size: cover;
 }
 
-.fotoback11 {
-  width: 100%;
-  display: block;
-  height: 20vh;
-  background: url('https://i.ibb.co/nzgj4PC/prog09.png') no-repeat center center;
-  background-size: cover;
-}
-
-.fotoback12 {
+.fotobackSOTW {
   width: 100%;
   display: block;
   height: 20vh;
