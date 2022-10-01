@@ -130,6 +130,7 @@ a:hover {
     color: black;
     background-color: rgb(255, 29, 37);
     text-decoration: none;
+    cursor: pointer;
 }
 
 body {
@@ -185,6 +186,34 @@ p a:hover {
     min-height: 85vh;
     max-height: auto;
     width: 32.5vw;
+}
+
+.linkhome {
+    width: 275px;
+    height: auto;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -100px;
+    position:absolute;
+/*    box-shadow: 0px 0px 10px 5px rgb(255, 29, 37);*/
+}
+
+#eddiemunson {
+    cursor: default;
+}
+
+#mieigattini {
+    cursor: default;
+}
+
+#eddie {
+    visibility: hidden;
+}
+
+#gattini {
+    visibility: hidden;
 }
 
 .info {

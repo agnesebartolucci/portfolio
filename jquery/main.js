@@ -15,3 +15,19 @@ jQuery(document).ready(function ($) {
 
     });  
 });
+
+$(document).ready(function() {    
+            $("#mieigattini").hover(function() {
+                $("#gattini").css("visibility", "visible");
+            }, function() {
+                $("#gattini").css("visibility", "hidden");
+            });
+});
+
+$(document).ready(function() {    
+            $("#eddiemunson").hover(function() {
+                $("#eddie").css("visibility", "visible");
+            }, function() {
+                $("#eddie").css("visibility", "hidden");
+            });
+});

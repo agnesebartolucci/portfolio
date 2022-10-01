@@ -86,6 +86,7 @@ a:hover {
     color: black;
     background-color: rgb(255, 29, 37);
     text-decoration: none;
+    cursor: pointer;
 }
 
 .loadermask {
