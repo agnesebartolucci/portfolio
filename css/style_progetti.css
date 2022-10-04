@@ -75,17 +75,14 @@
 }
 
 a {
-    color: black;
-}
-
-a, a:visited {
-	transition: 0.3s all ease;
+    color: rgb(255, 29, 37);
+    text-decoration: none;
 }
 
 a:hover {
-    color: black;
-    background-color: rgb(255, 29, 37);
-    text-decoration: none;
+    color: rgb(255, 29, 37);
+/*    background-color: rgb(255, 29, 37);*/
+    text-decoration: underline;
     cursor: pointer;
 }
 
@@ -147,6 +144,18 @@ b {
 
 i {
     font-family: RF Dewi I;
+}
+
+#AB a {
+    color: black;
+}
+
+#CV a {
+    color: black;
+}
+
+#Contact a {
+    color: black;
 }
 
 .container1 {
@@ -219,7 +228,7 @@ h2 {
 }
 
 p a {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 p a:hover {
@@ -228,6 +237,7 @@ p a:hover {
 
 .website{
     font-family: Lovelace;
+    color: rgb(255, 29, 37);
 }
 
 .container2 {
@@ -319,20 +329,20 @@ p a:hover {
 
 .container3 a {
     color: rgb(255, 29, 37);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .container3 a:hover {
-    color: black;
+    text-decoration: underline;
 }
 
 .container4 a {
     color: rgb(255, 29, 37);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .container4 a:hover {
-    color: black;
+    text-decoration: underline;
 }
 
 ul {
@@ -352,7 +362,7 @@ ul li {
 }
 
 .award {
-    color: rgb(255, 29, 37);
+    color: black;
 }
 
 .file {

@@ -119,17 +119,14 @@
 }
 
 a {
-    color: black;
-}
-
-a, a:visited {
-	transition: 0.3s all ease;
+    color: rgb(255, 29, 37);
+    text-decoration: none;
 }
 
 a:hover {
-    color: black;
-    background-color: rgb(255, 29, 37);
-    text-decoration: none;
+    color: rgb(255, 29, 37);
+/*    background-color: rgb(255, 29, 37);*/
+    text-decoration: underline;
     cursor: pointer;
 }
 
@@ -139,6 +136,18 @@ body {
     font-family: RF Dewi;
     font-size: 2.1vh;
     background-color: #e6e6e6;
+}
+
+#AB a {
+    color: black;
+}
+
+#CV a {
+    color: black;
+}
+
+#Contact a {
+    color: black;
 }
 
 b {
@@ -221,10 +230,11 @@ h2 {
 
 .website{
     font-family: Lovelace;
+    color: rgb(255, 29, 37);
 }
 
 p a {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 p a:hover {
