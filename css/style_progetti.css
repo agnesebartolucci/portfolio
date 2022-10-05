@@ -211,9 +211,13 @@ i {
 }
 
 h1 {
-    font-family: Lovelace I;
+    font-family: Lovelace;
     font-size: 4vh;
     color: rgb(255, 29, 37);
+}
+
+.italich1 {
+    font-family: Lovelace I;
 }
 
 .annotag{

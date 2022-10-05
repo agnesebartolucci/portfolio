@@ -438,13 +438,13 @@ p a:hover {
 }
 
 h1 {
-    font-family: Lovelace I;
+    font-family: Lovelace;
     font-size: 4vh;
     color: rgb(255, 29, 37);
 }
 
 h1 a {
-    font-family: Lovelace I;
+    font-family: Lovelace;
     font-size: 4vh;
     color: rgb(255, 29, 37);
     text-decoration: none;
@@ -491,7 +491,7 @@ h1 a:hover {
     }
     
     h1 a {
-        font-family: Lovelace I;
+        font-family: Lovelace;
         font-size: 32px;
         color: rgb(255, 29, 37);
         text-decoration: none;
@@ -663,7 +663,7 @@ h1 a:hover {
     }
     
      h1 a {
-         font-family: Lovelace I;
+         font-family: Lovelace;
          font-size: 2.3vh;
          color: rgb(255, 29, 37);
          text-decoration: none;

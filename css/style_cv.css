@@ -211,7 +211,7 @@ i {
 }
 
 h1 {
-    font-family: Lovelace I;
+    font-family: Lovelace;
     font-size: 4vh;
     color: rgb(255, 29, 37);
 }
@@ -224,7 +224,7 @@ h2 {
 }
 
 .bcv {
-    color: rgb(255, 29, 37);
+    color: black;
     font-size: 2.6vh;
 }
 
