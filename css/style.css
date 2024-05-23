@@ -2,14 +2,6 @@
     box-sizing: border-box;
 }
 
-/*
-@font-face {
-  font-family: RF Dewi;
-  src: url(../assets/font/Russian Fonts-RF Dewi-Regular.otf);
-  font-weight: 400;
-}
-*/
-
 @font-face {
     font-family: RF Dewi;
     src: url(../assets/font/RFDewi-Regular.woff2) format('woff2'),
@@ -18,14 +10,6 @@
     font-weight: 400;
     font-style: normal;
   }
-
-/*
-@font-face {
-  font-family: RF Dewi;
-  src: url(../assets/font/Russian Fonts-RF Dewi-Bold.otf);
-  font-weight: 400;
-}
-*/
 
 @font-face {
     font-family: RF Dewi B;
@@ -43,34 +27,18 @@
     font-weight: 500;
   }
 
-@font-face {
-    font-family: Lovelace;
-    src: url(../assets/font/Lovelace-Medium.woff2) format('woff2'),
-        url(../assets/font/Lovelace-Medium.woff) format('woff'),
-        url(../assets/font/Lovelace-Medium.ttf) format('truetype');
-    font-weight: 500;
-    font-style: normal;
+  @font-face {
+    font-family: RF Dewi BI;
+    src: url(../assets/font/RFDewi-BoldItalic.woff2) format('woff2'),
+        url(../assets/font/RFDewi-BoldItalic.woff) format('woff'),
+        url(../assets/font/RFDewi-BoldItalic.ttf) format('truetype');
+    font-weight: 700;
   }
 
-@font-face {
-    font-family: Lovelace I;
-    src: url(../assets/font/Lovelace-MediumItalic.woff2) format('woff2'),
-        url(../assets/font/Lovelace-MediumItalic.woff) format('woff'),
-        url(../assets/font/Lovelace-MediumItalic.ttf) format('truetype');
-    font-weight: 500;
-    font-style: normal;
-  }
-
-/*
-@font-face {
-  font-family: Lovelace;
-  src: url(../assets/font/Lovelace Medium Italic.otf);
-  font-weight: 400;
-}
-*/
+/* loader */
 
 .loadermask {
-	background: rgb(255, 29, 37);
+	background: #8C78FF;
 	bottom: 0;
 	left: 0;
 	position: fixed;
@@ -113,41 +81,32 @@
     }
 }
 
+/* aspetto selezione */
+
 ::selection {
-    color:white;
-    background: rgb(255, 29, 37);
+    background: rgba(140, 120, 255, .2);
 }
 
+/* aspetto link */
+
 a {
-    color: rgb(255, 29, 37);
+    color: #8C78FF;
     text-decoration: none;
 }
 
 a:hover {
-    color: rgb(255, 29, 37);
-/*    background-color: rgb(255, 29, 37);*/
+    color: #8C78FF;
     text-decoration: underline;
+    text-decoration-color: #8C78FF;
     cursor: pointer;
 }
 
-#AB a {
-    color: black;
-}
-
-#CV a {
-    color: black;
-}
-
-#Contact a {
-    color: black;
-}
 
 body {
 	color: black;
-    margin: 2vh;
     font-family: RF Dewi;
     font-size: 2.1vh;
-    background-color: #e6e6e6;
+    background-color: #E6E6E6;
 }
 
 b {
@@ -158,43 +117,48 @@ i {
     font-family: RF Dewi I;
 }
 
-p a {
-    text-decoration: none;
+h1 {
+    font-size: 5vh;
+    font-family: RF Dewi B;
+    color: #8C78FF;
+    margin-bottom: 2.5vh;
 }
 
-p a:hover {
-    text-decoration: underline;
-}
+/* sidebar */
 
 .container1 {
-    padding: 0;
+    padding-top: 2vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    padding-bottom: 3vh;
+    background-color: white;
+    margin: 0;
+    height: 100%;
+    position: fixed;
+    overflow: scroll;
 }
 
 .nav {
-    border: 0.2vh solid black;
-    background-color: white;
-    margin-bottom: 2vh;
-    padding-right: 2vh;
-    padding-left: 2vh;
+    color: #8C78FF;
+    font-size: 2vh;
     justify-content: space-between;
-    width: 32.5vw;
+    margin-bottom: 4vh;
 }
 
-.container2 {
-    padding: 0;
+#home {
+    margin-right: 3vh;
 }
 
 .sidebar {
-    border: 0.2vh solid black;
-    padding-top: 2vh;
-    padding-left: 2vh;
-    padding-right: 2vh;
-    padding-bottom: 2vh;
-    margin-bottom: 2vh;
-    background-color: white;
-    min-height: 85vh;
     max-height: auto;
-    width: 32.5vw;
+}
+
+.sidebar p {
+    margin-bottom: 2vh;
+}
+
+.footer {
+    font-size: 1.6vh;
 }
 
 .linkhome {
@@ -224,694 +188,310 @@ p a:hover {
     visibility: hidden;
 }
 
-.info {
-    font-family: Lovelace;
-    font-size: 2.1vh;
-    font-weight: 600;
-    color: rgb(255, 29, 37);
-    margin-top: -4.5vh;
-    padding: 0;
-    text-align: right;
+/* main home */
+
+.container2 {
+    padding-top: 2vh;
+    padding-left: 3vh;
+    padding-right: 0;
+    padding-bottom: 3vh;
 }
 
-.info2 {
-    font-family: Lovelace;
-    font-size: 16px;
-    font-weight: 600;
-    color: rgb(255, 29, 37);
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    padding-left: 0;
-}
-
-.website{
-    font-family: Lovelace;
+.selworks {
+    font-family: RF Dewi B;
+    font-size: 5vh;
+    margin-bottom: 3vh;
 }
 
 .catalogo {
-	display: flex;
 	max-width: 100%;
-	flex-wrap: wrap;
-    padding: 0;
-    margin:0;
-    justify-content: space-between;
-}
-
-.progetto {
-	width: 6.8vw;
-    height: 27vh;
-	display: flex;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 2vh;
-    margin-bottom: 2vh;
-    flex-basis: column;
-    align-items: stretch;
-    justify-content: flex-start;
-}
-
-.segnaposto {
-    width: 6.8vw;
-    height: 27vh;
-	display: none;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 1.9vh;
-    margin-bottom: 2vh;
-    flex-basis: column;
-    align-items: stretch;
-    justify-content: flex-start;   
-}
-
-.num {
-    color: black;
-    height: 1.6vh;
-    font-size: 1.6vh;
-    line-height: 1;
-    font-family: RF Dewi B;
     margin: 0;
     padding: 0;
 }
 
-.fotobackNSSI {
-  width: 100%;
-  display: block;
-  height: 20vh;
-  background: url('https://i.ibb.co/ts6q11n/NSSI-09.png') no-repeat center center;
-  background-size: cover;
+.column-wrapper {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.fotobackRFME {
-  width: 100%;
-  display: block;
-  height: 20vh;
-  background: url('https://i.ibb.co/tzghrpK/Senza-titolo-4-16.png') no-repeat center center;
-  background-size: cover;
-}
-
-.fotobackDFGP {
-  width: 100%;
-  display: block;
-  height: 20vh;
-  background: url('https://i.ibb.co/z4ntNYX/DFGP-salutemulti.png') no-repeat center center;
-  background-size: cover;
-}
-
-.fotobackS {
-  width: 100%;
-  display: block;
-  height: 20vh;
-  background: url('https://i.ibb.co/3MMhR5M/prog04.png') no-repeat center center;
-  background-size: cover;
-}
-
-.fotobackRBT {
-  width: 100%;
-  display: block;
-  height: 20vh;
-  background: url('https://i.ibb.co/M7KPwV6/prog05.png') no-repeat center center;
-  background-size: cover;
-}
-
-.fotobackLOTJ {
-  width: 100%;
-  display: block;
-  height: 20vh;
-  background: url('https://i.ibb.co/JzqG8Js/prog02.jpg') no-repeat center center;
-  background-size: cover;
-}
-
-.fotobackMTIV {
-  width: 100%;
-  display: block;
-  height: 20vh;
-  background: url('https://i.ibb.co/VvvCLdx/prog01.png') no-repeat center center;
-  background-size: cover;
-}
-
-.fotobackWNICF {
-  width: 100%;
-  display: block;
-  height: 20vh;
-  background: url('https://i.ibb.co/dtRw0BS/prog03.png') no-repeat center center;
-  background-size: cover;
-}
-
-.fotobackESC {
-  width: 100%;
-  display: block;
-  height: 20vh;
-  background: url('https://i.ibb.co/4dWPwJP/prog06.png') no-repeat center center;
-  background-size: cover;
-}
-
-.fotobackH {
-  width: 100%;
-  display: block;
-  height: 20vh;
-  background: url('https://i.ibb.co/sqP2zjV/prog07.png') no-repeat center center;
-  background-size: cover;
-}
-
-.fotobackTT {
-  width: 100%;
-  display: block;
-  height: 20vh;
-  background: url('https://i.ibb.co/vB1z5Rr/prog08.png') no-repeat center center;
-  background-size: cover;
-}
-
-.fotobackSOTW {
-  width: 100%;
-  display: block;
-  height: 20vh;
-  background: url('https://i.ibb.co/dPGLmkS/prog10.png') no-repeat center center;
-  background-size: cover;
-}
-
-.foto{
-    border: 0.2vh solid black;
-    margin-top: 3vh;
-    width: 6.8vw;
-    height: 20vh;
+.column {
     position:relative;
+    margin: 0;
     padding: 0;
-/*    margin-left: -1.9vh;*/
-    margin-left: -2.8vh;
 }
 
-.infoprog {
-/*    border: 0.2vh solid black;*/
-/*    margin-top: 3vh;*/
-/*    position: absolute;*/
-/*    width: 6.8vw;*/
-    height: 18.6vh;
-    padding: 0;
-    margin: 0.5vh;
-/*    margin-left: -1.9vh;*/
-/*    margin-left: -6.8vw;*/
-    background-color: rgb(255, 29, 37);
-    opacity: 0;
-    transition: .5s all ease;
-    border-radius: 1.5vh;
+/* main progetti */
+
+.container3 {
+    padding: 3vh;
 }
 
-.titoloprog {
-    color: black;
-    font-size: 1.9vh;
-    padding: 0.5vh;
+.container p {
+    padding: 0vh;
+    margin: 0vh;
+    margin-bottom: 3vh;
 }
 
-.progetto:hover .infoprog {
-  opacity: 0.9;
+.file {
+    width: 100%;
+    padding: 0vh;
+    padding-bottom: 3vh;
 }
 
-.tags {
-    width: 6.8vw;
-    color: black;
+.dida {
     font-size: 1.6vh;
-    line-height: 1;
-    margin-top: 23.7vh;
-    margin-left: -2vh;
-    margin-left: -6.8vw;
+    line-height: 1.4;
+    margin-top: -2vh;
+}
+
+.info {
+    margin: 0;
+    padding: 0;
+    border: 0.2vh solid #8C78FF;
+    border-bottom: none;
+    display: flex;
+    font-size: 1.6vh;
+}
+
+.contributo {
+    margin: 0;
+    padding: 0.7vh;
+    font-size: 1.6vh;
+    margin-bottom: 3vh;
+    border: 0.2vh solid #8C78FF;
+}
+
+.solo {
+    margin-bottom: 3vh;
+    border: 0.2vh solid #8C78FF;
+}
+
+.contributo p {
+    padding: 0;
+    margin: 0;
+}
+
+.info div p {
+    padding: 0;
+    margin: 0;
+}
+
+.left {
+    margin: 0;
     padding: 0;
 }
 
-h1 {
-    font-family: Lovelace;
-    font-size: 4vh;
-    color: rgb(255, 29, 37);
+.type {
+    margin: 0;
+    padding: 0.7vh;
+    border-bottom: 0.2vh solid #8C78FF;
 }
 
-h1 a {
-    font-family: Lovelace;
-    font-size: 4vh;
-    color: rgb(255, 29, 37);
-    text-decoration: none;
+.faculty {
+    margin: 0;
+    padding: 0.7vh;
+    border-bottom: 0.2vh solid #8C78FF;
 }
 
-h1 a:hover {
-    color: rgb(255, 29, 37);
-/*    background-color: rgb(255, 29, 37);*/
+.info a {
+    color: #8C78FF;
+    font-family: RF Dewi B;
+}
+
+.info a:hover {
+    color: #8C78FF;
     text-decoration: underline;
 }
 
-.container3 {
-    padding: 0;
-    margin:0;
+.award {
+    margin: 0;
+    padding: 0.7vh;
 }
 
-.footer {
+.right {
+    margin: 0;
+    padding: 0.7vh;
+    border-left: 0.2vh solid #8C78FF;
+}
+
+/* main CV */
+
+.container4 {
+	max-width: 100%;
+    padding: 0;
+}
+
+.container4 div {
+    border-bottom: solid 0.2vh #8C78FF;
+    padding: 1.5vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+}
+
+.container4 p {
+    margin: 0;
+}
+
+.data {
+    font-size: 1.6vh;
+}
+
+.titolo {
+    font-family: RF Dewi B;
+    font-size: 3vh;
+    color: #8C78FF;
+}
+
+.riempiposto {
+    height: 50%;
+    background-color: #8C78FF;
+}
+
+.container4 ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 1.5vh;
+    list-style-type: "→";
+    list-style-position: outside;
+}
+
+li::marker{
+    font-size: 1.8vh;
+ }
+ 
+/* singolo progetto */
+
+.progetto {
+    margin: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 3vh;
+    padding-bottom: 2vh;
+}
+
+.progetto a:hover {
+    text-decoration: none;
+}
+
+.progetto:hover {
+    cursor: pointer;
+}
+
+.anno {
+    font-size: 1.6vh;
+    color: black;
+}
+
+.nomeprogetto {
+    font-family: RF Dewi B;
+    color: black;
+    font-size: 3vh;
+    line-height: 1.2;
+    padding-bottom: 1vh;
+}
+
+.nomeprogetto:hover {
+    color: #8C78FF;
+}
+
+.hoverprogetto {
+    position: relative;
+    width: 100%;
+}
+
+.riassunto {
     color: black;
     font-size: 1.6vh;
-    border: 0.2vh solid black;
-    background-color: white;
-    padding-right: 2vh;
-    padding-left: 2vh;
-    width: 32.5vw;
+    line-height: 1.4;
+    padding-bottom: 1vh;
 }
+
+.imgprogetto {
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+    background-color: #8C78FF;
+}
+
+.overlay {
+    border-radius: 12px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #8C78FF;
+  }
+  
+  .progetto:hover .overlay {
+    opacity: .5;
+    cursor: pointer;
+  }
+
+  .tags {
+    color: #8C78FF;
+    font-size: 1.6vh;
+    padding-top: 1vh;
+    line-height: 1.4;
+}
+
+/* progetto prima/dopo */
+
+.nextprev {
+    font-family: RF Dewi B;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3vh;
+}
+
+.nextprev a:hover {
+    text-decoration: none;
+}
+
+/* copyright */
+
+  .copy {
+    font-size: 1.6vh;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    padding-right: 3vh;
+    margin-bottom: none;
+  }
+
+  .copyprg {
+    font-size: 1.6vh;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+  }
 
 /*//////////////*/
 /*Media queries*/
 
 @media only screen and (max-width: 1200px) {
-    
-    body {
-        font-family: RF Dewi;
-        font-size: 16px;
-    }
-    
-    .nav {
-        border: 1px solid black;
-        width: 100%;
-    }
-    
-    h1 {
-        font-size: 32px;
-    }
-    
-    h1 a {
-        font-family: Lovelace;
-        font-size: 32px;
-        color: rgb(255, 29, 37);
-        text-decoration: none;
-    }
-    
-    h1 a:hover {
-        color: rgb(255, 29, 37);
-/*        background-color: rgb(255, 29, 37);*/
-        text-decoration: underline;
-    }
-    
-    .sidebar {
-        border: 1px solid black;
-        padding-top: 2vh;
-        padding-left: 2vh;
-        padding-right: 2vh;
-        padding-bottom: 2vh;
-        margin-bottom: 2vh;
-        background-color: white;
-        min-height: auto;
-        max-height: auto;
-        width: 100%;
+
+    .container1 {
         position: relative;
     }
-    
-    .catalogo {
-        min-width: 100%;
-        justify-content: space-between;
-        margin:0px;
-    }
-    
-    .bcv { 
-    font-size: 20px;
-    }
-    
-    .num {
-        height: 12px;
-        font-size: 12px;
-    }
-
-    
-    .progetto {
-        height: 200px;
-        width: 98px;
-        margin: 7px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-    
-    .foto{
-        border: 1px solid black;
-        margin-top: 20px;
-        width: 98px;
-        height: 150px;
-        position:relative;
-        padding: 0;
-        margin-left: -2.8vh;
-    }
-    
-    .infoprog {
-/*        border: 0px solid black;*/
-/*
-        margin-top: 20px;
-        width: 98px;
-*/
-        height: 140px;
-        padding: 0;
-/*        position: absolute;*/
-/*        margin-left: -1.9vh;*/
-/*        margin-left: -98px;*/
-        background-color: rgb(255, 29, 37);
-        opacity: 0;
-        transition: .5s all ease;
-    }
-    
-    .titoloprog {
-        color: black;
-        font-size: 16px;
-        padding: 3px;
-    }
-    
-    .tags {
-        width: 98px;
-        color: black;
-        font-size: 12px;
-        line-height: 1;
-        margin-top: 180px;
-        margin-left: -2vh;
-        margin-left: -98px;
-        padding: 0;
-    }
-    
-    .footer {
-        font-size: 12px;
-        border: 1px solid black;
-        width: 100%;
-    }
-
 }
 
-@media only screen and (width: 1366px) and (height: 1024px) {
-    .sidebar {
-        height: auto;
-        position: relative;
-    }
-    
-    .catalogo {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0;
-        margin:0;
-        justify-content: space-between;
-    }
-    
-    .segnaposto {
-        display: flex;
-    }
-    
-    .seg2 {
-        display: none;
-    }
-    
-    .info {
-        font-family: Lovelace;
-        font-size: 2.1vh;
-        font-weight: 600;
-        color: rgb(255, 29, 37);
-        margin-top: -4.5vh;
-        text-align: right;
-        padding: 0;
+/* Adjust column widths for smaller screens */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .column {
+        flex-basis: 50%; /* Two columns */
     }
 }
 
-@media only screen and (max-width: 3000px) and (min-height: 2000px) { 
-    body {
-        color: black;
-        margin: 2vh;
-        font-family: RF Dewi;
-        font-size: 1vh;
-        background-color: #e6e6e6;
-    }
-    
-    .nav {
-        border: 0.2vh solid black;
-        background-color: white;
-        margin-bottom: 1.5vh;
-        padding-right: 1.5vh;
-        padding-left: 2vh;
-        justify-content: space-between;
-        width: 32.5vw;
-    }
-    
-    .sidebar {
-        border: 0.2vh solid black;
-        padding-top: 1.5vh;
-        padding-left: 1.5vh;
-        padding-right: 1.5vh;
-        padding-bottom: 1.5vh;
-        margin: 0;
-        margin-bottom: 2vh;
-        background-color: white;
-        min-height: 88.5vh;
-        max-height: auto;
-        width: 32.5vw;
-    }
-    
-    h1 {
-        font-size: 2.3vh;
-    }
-    
-     h1 a {
-         font-family: Lovelace;
-         font-size: 2.3vh;
-         color: rgb(255, 29, 37);
-         text-decoration: none;
-    }
-    
-    h1 a:hover {
-        color: rgb(255, 29, 37);
-        background-color: rgb(255, 29, 37);
-        text-decoration: underline;
-    }
-    
-    .catalogo {
-        display: flex;
-        max-width: 100%;
-        flex-wrap: wrap;
-        padding: 0;
-        padding-left: 1vw;
-        margin:0;
-        justify-content: space-between;
-    }
-    
-    .progetto {
-        width: 6.8vw;
-        height: 10vh;
-        display: flex;
-        padding-left: 0;
-        padding-right: 0;
-        margin-left: 2vh;
-        margin-bottom: 2vh;
-        flex-basis: column;
-        align-items: stretch;
-        justify-content: flex-start;
-    }
-    
-    .segnaposto {
-        width: 6.8vw;
-        height: 10vh;
-        display: none;
-        padding-left: 0;
-        padding-right: 0;
-        margin-left: 1.1vh;
-        margin-bottom: 2vh;
-        flex-basis: column;
-        align-items: stretch;
-        justify-content: flex-start;
-    }
-    
-    .info {
-        font-family: Lovelace;
-        font-size: 1.1vh;
-        font-weight: 600;
-        color: rgb(255, 29, 37);
-        padding: 0;
-        text-align: right;
-    }
-    
-    .num {
-        color: black;
-        height: 0.7vh;
-        font-size: 0.7vh;
-        line-height: 0.5;
-        font-weight: bold;
-        margin: 0;
-        padding: 0;
-    }
-    
-   .foto{
-       border: 0.2vh solid black;
-       margin-top: 1.5vh;
-       width: 6.8vw;
-       height: 10vh;
-       position:relative;
-       padding: 0;
-       margin-left: -1.1vh;
-    }
-    
-/*
-    .foto10 {
-        margin-left: -1.1vh;
-    }
-*/
-    
-    .infoprog {
-/*        border: 0.2vh solid black;*/
-/*
-        margin-top: 1.5vh;
-        width: 6.8vw;
-*/
-        height: 9.8vh;
-        padding: 0;
-/*        position: absolute;*/
-/*        margin-left: -1.1vh;*/
-/*        margin-left: -6.8vw;*/
-        background-color: rgb(255, 29, 37);
-        opacity: 0;
-        transition: .5s all ease;
-    }
-    
-    .titoloprog {
-        color: black;
-        font-size: 0.75vh;
-        padding: 0.25vh;
-    }
-    
-    .tags {
-        width: 6.8vw;
-        color: black;
-        font-size: 0.7vh;
-        line-height: 0.9vh;
-        margin-top: 12.5vh;
-        margin-left: -2vh;
-        margin-left: -6.8vw;
-        padding: 0;
-    }
-
-    .footer {
-        color: black;
-        font-size: 0.7vh;
-        border: 0.2vh solid black;
-        background-color: white;
-        padding-right: 1.5vh;
-        padding-left: 1.5vh;
-        width: 32.5vw;
-        margin: 0;
-    }
-}
-
-@media only screen and (max-width: 1200px) and (min-width: 1150px) {
-    .segnaposto {
-        display: flex;
-    }
-    
-    .seg2 {
-        display: flex;
-    }
-    
-    .loca {
-        display: none;
-    } 
-}
-
-@media only screen and (max-width: 1150px) and (min-width: 1039px) {
-    .segnaposto {
-        display: none;
-    }
-    
-    .seg2 {
-        display: flex;
-    }
-}
-
-@media only screen and (max-width: 1039px) and (min-width: 927px) {
-    .segnaposto {
-        display: none;
-    }
-    
-    .seg2 {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 927px) and (min-width: 815px) {
-    .segnaposto {
-        display: flex;
-    }
-    
-    .seg2 {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 815px) {
-    .container2 {
-        padding: 0;
-    }
-    
-    .catalogo {
-        min-width: 100%;
-        justify-content: space-between;
-        margin:0px;
-    }
-    
-    .progetto {
-        height: 200px;
-        width: 98px;
-        margin: 7px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-    
-    .segnaposto {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 703px) and (min-width: 590px) {
-    .segnaposto {
-        display: none;
-    }
-    
-    .seg2 {
-        display: none;
-    }
-    
-    .viva {
-        display: flex;
-    }
-}
-
-@media only screen and (max-width: 590px) {
-    .container2 {
-        padding: 0;
-    }
-    
-    .catalogo {
-        min-width: 100%;
-        justify-content: space-between;
-        margin:0px;
-    }
-    .progetto {
-        height: 200px;
-        width: 98px;
-        margin: 7px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-    
-    .segnaposto {
-        display: none;
-    }
-    
-    .seg2 {
-        display: none;
-    }
-    
-    .infoprog {
-/*
-        border: 1px solid black;
-        margin-top: 20px;
-        width: 98px;
-*/
-        height: 140px;
-        padding: 0;
-/*        position: absolute;*/
-/*        margin-left: -1.9vh;*/
-/*        margin-left: -97px;*/
-        background-color: rgb(255, 29, 37);
-        opacity: 0;
-        transition: .5s all ease;
+@media only screen and (max-width: 768px) {
+    .column {
+        flex-basis: 100%; /* One column */
     }
 }
