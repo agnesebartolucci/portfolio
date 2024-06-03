@@ -38,7 +38,7 @@
 /* loader */
 
 .loadermask {
-	background: #8C78FF;
+	background: #2500F5;
 	bottom: 0;
 	left: 0;
 	position: fixed;
@@ -90,14 +90,14 @@
 /* aspetto link */
 
 a {
-    color: #8C78FF;
+    color: #2500F5;
     text-decoration: none;
 }
 
 a:hover {
-    color: #8C78FF;
+    color: #2500F5;
     text-decoration: underline;
-    text-decoration-color: #8C78FF;
+    text-decoration-color: #2500F5;
     cursor: pointer;
 }
 
@@ -120,7 +120,7 @@ i {
 h1 {
     font-size: 5vh;
     font-family: RF Dewi B;
-    color: #8C78FF;
+    color: #2500F5;
     margin-bottom: 2.5vh;
 }
 
@@ -139,7 +139,7 @@ h1 {
 }
 
 .nav {
-    color: #8C78FF;
+    color: #2500F5;
     font-size: 2vh;
     justify-content: space-between;
     margin-bottom: 4vh;
@@ -247,7 +247,7 @@ h1 {
 .info {
     margin: 0;
     padding: 0;
-    border: 0.2vh solid #8C78FF;
+    border: 0.2vh solid #2500F5;
     border-bottom: none;
     display: flex;
     font-size: 1.6vh;
@@ -258,12 +258,12 @@ h1 {
     padding: 0.7vh;
     font-size: 1.6vh;
     margin-bottom: 3vh;
-    border: 0.2vh solid #8C78FF;
+    border: 0.2vh solid #2500F5;
 }
 
 .solo {
     margin-bottom: 3vh;
-    border: 0.2vh solid #8C78FF;
+    border: 0.2vh solid #2500F5;
 }
 
 .contributo p {
@@ -284,22 +284,22 @@ h1 {
 .type {
     margin: 0;
     padding: 0.7vh;
-    border-bottom: 0.2vh solid #8C78FF;
+    border-bottom: 0.2vh solid #2500F5;
 }
 
 .faculty {
     margin: 0;
     padding: 0.7vh;
-    border-bottom: 0.2vh solid #8C78FF;
+    border-bottom: 0.2vh solid #2500F5;
 }
 
 .info a {
-    color: #8C78FF;
+    color: #2500F5;
     font-family: RF Dewi B;
 }
 
 .info a:hover {
-    color: #8C78FF;
+    color: #2500F5;
     text-decoration: underline;
 }
 
@@ -311,7 +311,7 @@ h1 {
 .right {
     margin: 0;
     padding: 0.7vh;
-    border-left: 0.2vh solid #8C78FF;
+    border-left: 0.2vh solid #2500F5;
 }
 
 /* main CV */
@@ -322,7 +322,7 @@ h1 {
 }
 
 .container4 div {
-    border-bottom: solid 0.2vh #8C78FF;
+    border-bottom: solid 0.2vh #2500F5;
     padding: 1.5vh;
     padding-left: 3vh;
     padding-right: 3vh;
@@ -339,12 +339,12 @@ h1 {
 .titolo {
     font-family: RF Dewi B;
     font-size: 3vh;
-    color: #8C78FF;
+    color: #2500F5;
 }
 
 .riempiposto {
     height: 50%;
-    background-color: #8C78FF;
+    background-color: #2500F5;
 }
 
 .container4 ul {
@@ -391,7 +391,7 @@ li::marker{
 }
 
 .nomeprogetto:hover {
-    color: #8C78FF;
+    color: #2500F5;
 }
 
 .hoverprogetto {
@@ -410,7 +410,7 @@ li::marker{
     display: block;
     width: 100%;
     border-radius: 12px;
-    background-color: #8C78FF;
+    background-color: #2500F5;
 }
 
 .overlay {
@@ -424,16 +424,16 @@ li::marker{
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #8C78FF;
+    background-color: #2500F5;
   }
   
   .progetto:hover .overlay {
-    opacity: .5;
+    opacity: .3;
     cursor: pointer;
   }
 
   .tags {
-    color: #8C78FF;
+    color: #2500F5;
     font-size: 1.6vh;
     padding-top: 1vh;
     line-height: 1.4;
