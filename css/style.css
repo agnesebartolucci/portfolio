@@ -101,6 +101,7 @@ a:hover {
     cursor: pointer;
 }
 
+/* aspetto pagina */
 
 body {
 	color: black;
@@ -118,10 +119,24 @@ i {
 }
 
 h1 {
-    font-size: 5vh;
+    font-size: 4.5vh;
     font-family: RF Dewi B;
     color: #2500F5;
     margin-bottom: 2.5vh;
+}
+
+h2 {
+    font-size: 2.5vh;
+    font-family: RF Dewi;
+    margin-top: -1vh;
+    margin-bottom: 2.5vh;
+    color: #2500F5;
+}
+
+h3 {
+    font-family: RF Dewi B;
+    color: #2500F5;
+    font-size: 2.1vh;
 }
 
 /* sidebar */
@@ -130,7 +145,7 @@ h1 {
     padding-top: 2vh;
     padding-left: 3vh;
     padding-right: 3vh;
-    padding-bottom: 3vh;
+    padding-bottom: 1vh;
     background-color: white;
     margin: 0;
     height: 100%;
@@ -145,8 +160,8 @@ h1 {
     margin-bottom: 4vh;
 }
 
-#home {
-    margin-right: 3vh;
+.nav a {
+    margin-right: 4vh;
 }
 
 .sidebar {
@@ -167,21 +182,13 @@ h1 {
     margin: 0 auto;
     top: 50%;
     left: 50%;
-    margin-top: -250px;
+    margin-top: -220px;
     margin-left: -100px;
     position:absolute;
 }
 
-#eddiemunson {
-    cursor: default;
-}
-
 #mieigattini {
     cursor: default;
-}
-
-#eddie {
-    visibility: hidden;
 }
 
 #gattini {
@@ -197,16 +204,67 @@ h1 {
     padding-bottom: 3vh;
 }
 
+.buttons {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2vh;
+}
+
+.buttons button {
+    font-size: 1.8vh;
+    font-family: RF Dewi B;
+    margin: 0;
+    margin-right: 0.5vh;
+    margin-bottom: 1vh;
+    border: 0.2vh solid #2500F5;
+    border-radius: 50px;
+    color: #2500F5;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    background-color: none;
+    outline: none;
+}
+
+.buttons button:focus {
+    outline: none;
+}
+
+.buttons button:hover {
+    color: #e6e6e6;
+    background-color: #2500F5;
+    transition-timing-function: ease-in;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.buttons button.active {
+    background-color: #2500F5;
+    color: #e6e6e6;
+}
+
+.progetto {
+    display: block; /* Ensure projects are visible by default */
+}
+
+.progetto[style*="none"] {
+    display: none; /* Override display for hidden projects */
+}
+
 .selworks {
     font-family: RF Dewi B;
-    font-size: 5vh;
-    margin-bottom: 3vh;
+    font-size: 3.5vh;
+    margin-bottom: 2vh;
+    color: #2500F5;
 }
 
 .catalogo {
-	max-width: 100%;
+    max-width: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .column-wrapper {
@@ -215,8 +273,8 @@ h1 {
 }
 
 .column {
-    position:relative;
-    margin: 0;
+    position: relative;
+    width: 50%; /* Two columns */
     padding: 0;
 }
 
@@ -232,14 +290,23 @@ h1 {
     margin-bottom: 3vh;
 }
 
+.text-progetto {
+    padding: 0;
+}
+
 .file {
     width: 100%;
     padding: 0vh;
-    padding-bottom: 3vh;
+    padding-bottom: 4vh;
+    padding-top: 1vh;
+}
+
+.protocol {
+    padding-bottom: 2vh;
 }
 
 .dida {
-    font-size: 1.6vh;
+    font-size: 1.8vh;
     line-height: 1.4;
     margin-top: -2vh;
 }
@@ -250,13 +317,33 @@ h1 {
     border: 0.2vh solid #2500F5;
     border-bottom: none;
     display: flex;
-    font-size: 1.6vh;
+    font-size: 2.6vh;
+}
+
+.last {
+    margin: 0;
+    margin-bottom: 3vh;
+    padding: 0;
+    border: 0.2vh solid #2500F5;
+    border-right: none;
+    display: flex;
+    font-size: 1.8vh;
+}
+
+.last p {
+    margin: 0;
+    padding: 0;
+}
+
+.skills, .team {
+    margin: 0;
+    padding: 0.7vh;
+    border-right: 0.2vh solid #2500F5;
 }
 
 .contributo {
     margin: 0;
     padding: 0.7vh;
-    font-size: 1.6vh;
     margin-bottom: 3vh;
     border: 0.2vh solid #2500F5;
 }
@@ -281,16 +368,15 @@ h1 {
     padding: 0;
 }
 
-.type {
+.riga {
     margin: 0;
     padding: 0.7vh;
+    color: #2500F5;
     border-bottom: 0.2vh solid #2500F5;
 }
 
-.faculty {
-    margin: 0;
-    padding: 0.7vh;
-    border-bottom: 0.2vh solid #2500F5;
+.final {
+    border-bottom: none;
 }
 
 .info a {
@@ -303,15 +389,75 @@ h1 {
     text-decoration: underline;
 }
 
-.award {
-    margin: 0;
-    padding: 0.7vh;
-}
-
 .right {
     margin: 0;
     padding: 0.7vh;
     border-left: 0.2vh solid #2500F5;
+    font-size: 2.1vh;
+}
+
+.goal p {
+    color: #2500F5;
+    font-size: 4vh;
+    line-height: 130%;
+}
+
+.goal {
+    margin-left: -3vh;
+    margin-right: -3vh;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    padding-top: 3vh;
+    padding-bottom: 1vh;
+    border-top: 0.2vh solid #2500F5;
+    border-bottom: 0.2vh solid #2500F5;
+}
+
+.research-question {
+    color: black; 
+    font-size: 2.6vh;
+}
+
+.result p {
+    color: #2500F5;
+    font-size: 4vh;
+    line-height: 130%;
+}
+
+.result {
+    margin-left: -3vh;
+    margin-right: -3vh;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    padding-top: 3vh;
+    padding-bottom: 1vh;
+    border-top: 0.2vh solid #2500F5;
+    border-bottom: 0.2vh solid #2500F5;
+}
+
+ol {
+    margin: 0;
+    font-size: 2.6vh;
+}
+
+ol li::marker {
+    color: #2500F5;
+    font-family: RF Dewi B;
+  }
+
+svg {
+    margin-bottom: 3vh;
+    margin-top: 2vh;
+}
+
+.hunty-stories {
+    padding: 5vh;
+    background: black;
+    margin-bottom: 3vh;
 }
 
 /* main CV */
@@ -332,6 +478,19 @@ h1 {
     margin: 0;
 }
 
+.areas {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.areas div {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
 .data {
     font-size: 1.6vh;
 }
@@ -350,15 +509,99 @@ h1 {
 .container4 ul {
     margin: 0;
     padding: 0;
-    padding-left: 1.5vh;
-    list-style-type: "→";
+    padding-left: 2vh;
+    list-style-type: square;
     list-style-position: outside;
 }
 
-li::marker{
+ul li::marker {
+    color: #2500F5;
+  }
+
+ .tools {
+    margin: 0;
+    padding: 0;
+}
+
+.tool {
+    color: black;
     font-size: 1.8vh;
+    font-family: RF Dewi B;
+    border: 0.2vh solid black;
+    border-radius: 50px;
+    padding-right: 1vh;
+    padding-left: 1vh;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    display: inline-block;
+    margin-bottom: 1vh;
+}
+
+ /* gallery */
+
+ .carousel-wrapper {
+    margin-right: 3vh;
+    margin-bottom: 3vh;
+    position: relative;
+    overflow: hidden;
+    border: 0.2vh solid #2500F5;
  }
- 
+
+.carousel {
+    width: 92%;
+    margin: 0 auto;
+    display: flex;
+ }
+
+ .carousel-item {
+    min-width: 100%;
+    display: none; /* Hide all slides initially */
+}
+
+.carousel-item.active {
+    display: block; /* Show the active slide */
+}
+
+ .carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-item video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-item p {
+    font-size: 1.6vh;
+    border-top: 0.2vh solid #2500F5;
+    margin: 0;
+    padding: 0.5vh;
+}
+
+div .carousel-control {
+    width: 4%;
+    z-index: 999;
+    cursor: pointer;
+    color: #2500F5;
+    opacity: 1;
+    transition: none;
+}
+
+div .carousel-control:hover {
+    color: #2500F5;
+}
+
+div .carousel-control-prev {
+    border-right: 0.2vh solid #2500F5;
+}
+
+div .carousel-control-next {
+    border-left: 0.2vh solid #2500F5;
+}
+
 /* singolo progetto */
 
 .progetto {
@@ -378,14 +621,13 @@ li::marker{
 }
 
 .anno {
-    font-size: 1.6vh;
-    color: black;
+    display: none;
 }
 
 .nomeprogetto {
     font-family: RF Dewi B;
     color: black;
-    font-size: 3vh;
+    font-size: 3.5vh;
     line-height: 1.2;
     padding-bottom: 1vh;
 }
@@ -401,7 +643,7 @@ li::marker{
 
 .riassunto {
     color: black;
-    font-size: 1.6vh;
+    font-size: 1.8vh;
     line-height: 1.4;
     padding-bottom: 1vh;
 }
@@ -410,7 +652,6 @@ li::marker{
     display: block;
     width: 100%;
     border-radius: 12px;
-    background-color: #2500F5;
 }
 
 .overlay {
@@ -434,9 +675,8 @@ li::marker{
 
   .tags {
     color: #2500F5;
-    font-size: 1.6vh;
     padding-top: 1vh;
-    line-height: 1.4;
+    font-size: 1.8vh;
 }
 
 /* progetto prima/dopo */
