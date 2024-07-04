@@ -204,6 +204,26 @@ h3 {
     padding-bottom: 3vh;
 }
 
+.services {
+    font-size: 2.1vh;
+    margin-right: 3vh;
+}
+
+.services ol {
+    font-size: 2.1vh;
+    margin-left: 3vh;
+    margin-right: 0vh;
+}
+
+.services div {
+    margin: 0;
+    padding: 0;
+}
+
+.browse {
+    font-size: 2.6vh;
+}
+
 .buttons {
     margin: 0;
     padding: 0;
@@ -253,9 +273,9 @@ h3 {
 }
 
 .selworks {
+    margin-bottom: 3vh;
+    font-size: 3vh;
     font-family: RF Dewi B;
-    font-size: 3.5vh;
-    margin-bottom: 2vh;
     color: #2500F5;
 }
 
