@@ -83,31 +83,72 @@
                 
                 <div class="col-sm-12 col-md-12 col-xl-8 offset-xl-4 container2">
 
-                    <div class="selworks">↘ Gallery (under construction)</div>
+                    <div class="selworks">↘ Gallery</div>
                     <p></p>
 
-                    <!-- <div class="carousel-wrapper">
+                    <div class="carousel-wrapper">
 
                         <div class="carousel-control carousel-control-prev">←</div>
 
                             <div class="carousel">
 
-                                <div class="carousel-item active">
-                                    <img src="assets/img/WICNF/WICNF_img.png">
-                                        <p style="color: #2500F5;">Ciao ciao</p>
-                                        <p>Ciao ciao</p>
+                                <div class="carousel-item">
+                                    <img src="assets/img/Archive/Archive_generali_1.webp">
+                                    <p style="color: #2500F5;">Ciao ciao</p>
+                                    <p>Ciao ciao</p>
                                 </div>
 
                                 <div class="carousel-item">
-                                    <img src="assets/img/S/S_multi.png">
+                                    <img src="assets/img/Archive/Archive_generali_2.webp">
+                                    <p style="color: #2500F5;">Ciao ciao</p>
+                                    <p>Ciao ciao</p>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="assets/img/Archive/Archive_generali_3.webp">
+                                    <p style="color: #2500F5;">Ciao ciao</p>
+                                    <p>Ciao ciao</p>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="assets/img/Archive/Archive_whoops.webp">
+                                    <p style="color: #2500F5;">Ciao ciao</p>
+                                    <p>Ciao ciao</p>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="assets/img/Archive/Archive_seizure_1.webp">
+                                    <p style="color: #2500F5;">Ciao ciao</p>
+                                    <p>Ciao ciao</p>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="assets/img/Archive/Archive_seizure_2.webp">
                                     <p style="color: #2500F5;">Ciao ciao</p>
                                     <p>Ciao ciao</p>
                                 </div>
 
                                 <div class="carousel-item">
                                     <video playsinline autoplay muted loop>
-                                        <source src="assets/img/S/S_vid.mp4" type="video/mp4">
+                                        <source src="assets/img/Archive/Archive_seizure_vid.mp4" type="video/mp4">
                                       </video>
+                                    <p style="color: #2500F5;">Ciao ciao</p>
+                                    <p>Ciao ciao</p>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="assets/img/Archive/Archive_tragon_1.webp">
+                                    <p style="color: #2500F5;">Ciao ciao</p>
+                                    <p>Ciao ciao</p>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="assets/img/Archive/Archive_tragon_2.webp">
+                                    <p style="color: #2500F5;">Ciao ciao</p>
+                                    <p>Ciao ciao</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/Archive/Archive_tragon_3.webp">
                                     <p style="color: #2500F5;">Ciao ciao</p>
                                     <p>Ciao ciao</p>
                                 </div>
@@ -116,9 +157,12 @@
 
                         <div class="carousel-control carousel-control-next">→</div>
 
-                    </div> -->
+                    </div>
 
-                    <div class="copy">Desgined and developed by Agnese Bartolucci © 2024 | agnesebartolucci505@gmail.com</div>
+                    <div class="copy">
+                        <div>Desgined and developed by Agnese Bartolucci © 2024</div>
+                        <div>Email: <a href="mailto:agnesebartolucci505@gmail.com" target="_blank">agnesebartolucci505@gmail.com</a></div>
+                    </div>
                 
                 </div>
             
@@ -145,7 +189,7 @@
         const carouselItems = document.querySelectorAll('.carousel-item');
         let currentSlide = 0;
         const defaultIntervalTime = 3000; // 3 seconds
-        const extendedIntervalTime = 5000; // 5 seconds
+        const extendedIntervalTime = 10000; // 10 seconds
         let isManualNavigation = false;
 
         let intervalId = setInterval(function() {
