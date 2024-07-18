@@ -300,6 +300,21 @@ h3 {
 
 /* main progetti */
 
+.tag-prog {
+    color: #e6e6e6;
+    background-color: #2500F5;
+    font-size: 1.6vh;
+    font-family: RF Dewi B;
+    border: 0.2vh solid #2500F5;
+    border-radius: 50px;
+    padding-right: 1vh;
+    padding-left: 1vh;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    display: inline-block;
+    margin-bottom: 1vh;  
+}
+
 .container3 {
     padding: 3vh;
 }
@@ -342,7 +357,7 @@ h3 {
 
 .last {
     margin: 0;
-    margin-bottom: 3vh;
+    margin-bottom: 5vh;
     padding: 0;
     border: 0.2vh solid #2500F5;
     border-right: none;
@@ -364,11 +379,6 @@ h3 {
 .contributo {
     margin: 0;
     padding: 0.7vh;
-    margin-bottom: 3vh;
-    border: 0.2vh solid #2500F5;
-}
-
-.solo {
     margin-bottom: 3vh;
     border: 0.2vh solid #2500F5;
 }
@@ -414,6 +424,7 @@ h3 {
     padding: 0.7vh;
     border-left: 0.2vh solid #2500F5;
     font-size: 2.1vh;
+    word-wrap: break-word;
 }
 
 .goal p {
@@ -478,6 +489,71 @@ svg {
     padding: 5vh;
     background: black;
     margin-bottom: 3vh;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5vh;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3vh;
+}
+
+.navigation-prog {
+    display: flex;
+    flex-direction: column;
+    border: solid 0.2vh #2500f5;
+    padding: 1vh;
+    font-size: 1.8vh;
+    font-family: 'RF Dewi B';
+    border-radius: 12px;
+    height: 200px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navigation-prog i {
+    font-family: 'RF Dewi BI';
+}
+
+.navigation-prog:hover {
+    background-color: rgba(37, 0, 245, .1);
+    cursor: pointer;
+}
+
+.current {
+    background-color: rgba(37, 0, 245, .1);
+}
+
+.navigation-prog a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-decoration: none;
+}
+
+.navigation-prog-img {
+    width: 100%;
+    flex-grow: 1;
+    object-fit: cover;
+    min-height: 0;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.navigation-prog-titolo, .navigation-prog-skills {
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.navigation-prog-skills {
+    font-size: 1.5vh;
+    font-family: RF Dewi;
+}
+
+.navigation-prog-titolo:hover {
+    text-decoration: underline;
 }
 
 /* main CV */
