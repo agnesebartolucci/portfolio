@@ -239,6 +239,10 @@
 
                     </div>
 
+                    <div class="no-results" style="display: none; text-align: center; margin-right: 3vh; margin-top: 8vh; margin-bottom: 10vh; margin-left: 0; font-size: 3vh;">
+                        Try using fewer filters 😊
+                    </div>
+
                     <div class="copy">
                         <div>Desgined and developed by Agnese Bartolucci © 2024</div>
                         <div>Email: <a href="mailto:agnesebartolucci505@gmail.com" target="_blank">agnesebartolucci505@gmail.com</a></div>
@@ -258,58 +262,65 @@
     
     <script>
 
-        document.addEventListener("DOMContentLoaded", function() {
-            const buttons = document.querySelectorAll(".buttons button");
-            const projects = document.querySelectorAll(".progetto");
-            const columns = document.querySelectorAll(".column");
-    
-            buttons.forEach(button => {
-                button.addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    filterProjects();
-                });
-            });
-    
-            function filterProjects() {
-                const activeFilters = Array.from(buttons)
-                    .filter(button => button.classList.contains("active"))
-                    .map(button => button.getAttribute("data-filter"));
-    
-                projects.forEach(project => {
-                    const projectTags = project.getAttribute("data-tags").split(", ");
-                    const isVisible = activeFilters.every(filter => projectTags.includes(filter));
-                    project.style.display = isVisible ? "block" : "none";
-    
-                    // Handle autoplay for videos
-                    const video = project.querySelector("video");
-                    if (video) {
-                        if (isVisible) {
-                            video.play();
-                        } else {
-                            video.pause();
-                            video.currentTime = 0; // Reset video
-                        }
-                    }
-                });
-    
-                arrangeInColumns();
-            }
-    
-            function arrangeInColumns() {
-                const visibleProjects = Array.from(projects).filter(project => project.style.display !== "none");
-    
-                columns.forEach(column => {
-                    column.innerHTML = "";
-                });
-    
-                visibleProjects.forEach((project, index) => {
-                    columns[index % columns.length].appendChild(project);
-                });
-            }
-    
-            filterProjects(); // Initial call to display projects correctly
-            window.addEventListener("resize", arrangeInColumns);
+document.addEventListener("DOMContentLoaded", function() {
+    const buttons = document.querySelectorAll(".buttons button");
+    const projects = document.querySelectorAll(".progetto");
+    const columns = document.querySelectorAll(".column");
+    const noResultsMessage = document.querySelector(".no-results");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", function() {
+            this.classList.toggle("active");
+            filterProjects();
         });
+    });
+
+    function filterProjects() {
+        const activeFilters = Array.from(buttons)
+            .filter(button => button.classList.contains("active"))
+            .map(button => button.getAttribute("data-filter"));
+
+        let hasVisibleProjects = false;
+
+        projects.forEach(project => {
+            const projectTags = project.getAttribute("data-tags").split(", ");
+            const isVisible = activeFilters.every(filter => projectTags.includes(filter));
+            project.style.display = isVisible ? "block" : "none";
+            if (isVisible) hasVisibleProjects = true;
+
+            // Handle autoplay for videos
+            const video = project.querySelector("video");
+            if (video) {
+                if (isVisible) {
+                    video.play();
+                } else {
+                    video.pause();
+                    video.currentTime = 0; // Reset video
+                }
+            }
+        });
+
+        arrangeInColumns();
+
+        // Show or hide the "no results" message
+        noResultsMessage.style.display = hasVisibleProjects ? "none" : "block";
+    }
+
+    function arrangeInColumns() {
+        const visibleProjects = Array.from(projects).filter(project => project.style.display !== "none");
+
+        columns.forEach(column => {
+            column.innerHTML = "";
+        });
+
+        visibleProjects.forEach((project, index) => {
+            columns[index % columns.length].appendChild(project);
+        });
+    }
+
+    filterProjects(); // Initial call to display projects correctly
+    window.addEventListener("resize", arrangeInColumns);
+});
     </script>
     
 
