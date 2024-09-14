@@ -1133,6 +1133,12 @@ div .carousel-control-next {
     border-top: 2px solid black;
   }
 
+  .areas div {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
   /* gallery */
 
  .carousel-wrapper {
@@ -1458,6 +1464,16 @@ div .carousel-control-next {
     margin-bottom: 24px;
     border-top: 1.5px solid black;
   }
+
+  .areas {
+    display: block;
+}
+
+  .areas div {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
 
   /* gallery */
 
