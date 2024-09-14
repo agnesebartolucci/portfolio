@@ -204,26 +204,6 @@ h3 {
     padding-bottom: 3vh;
 }
 
-.services {
-    font-size: 2.1vh;
-    margin-right: 3vh;
-}
-
-.services ol {
-    font-size: 2.1vh;
-    margin-left: 3vh;
-    margin-right: 0vh;
-}
-
-.services div {
-    margin: 0;
-    padding: 0;
-}
-
-.browse {
-    font-size: 2.6vh;
-}
-
 .buttons {
     margin: 0;
     padding: 0;
@@ -243,7 +223,7 @@ h3 {
     padding-right: 2vh;
     padding-top: 0.5vh;
     padding-bottom: 0.5vh;
-    background-color: none;
+    background-color: #E6E6E6;
     outline: none;
 }
 
@@ -265,11 +245,11 @@ h3 {
 }
 
 .progetto {
-    display: block; /* Ensure projects are visible by default */
+    display: block;
 }
 
 .progetto[style*="none"] {
-    display: none; /* Override display for hidden projects */
+    display: none;
 }
 
 .selworks {
@@ -294,7 +274,7 @@ h3 {
 
 .column {
     position: relative;
-    width: 50%; /* Two columns */
+    width: 50%;
     padding: 0;
 }
 
@@ -480,11 +460,6 @@ ol li::marker {
     font-family: RF Dewi B;
   }
 
-svg {
-    margin-bottom: 3vh;
-    margin-top: 2vh;
-}
-
 .hunty-stories {
     padding: 5vh;
     background: black;
@@ -508,7 +483,7 @@ svg {
     font-size: 1.8vh;
     font-family: 'RF Dewi B';
     border-radius: 12px;
-    height: 200px;
+    height: 260px;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -633,6 +608,10 @@ ul li::marker {
     margin-bottom: 1vh;
 }
 
+.technicalskills {
+    margin-top: 1vh;
+}
+
  /* gallery */
 
  .carousel-wrapper {
@@ -651,11 +630,11 @@ ul li::marker {
 
  .carousel-item {
     min-width: 100%;
-    display: none; /* Hide all slides initially */
+    display: none;
 }
 
 .carousel-item.active {
-    display: block; /* Show the active slide */
+    display: block;
 }
 
  .carousel-item img {
@@ -775,22 +754,6 @@ div .carousel-control-next {
     font-size: 1.8vh;
 }
 
-/* progetto prima/dopo */
-
-.nextprev {
-    font-family: RF Dewi B;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 3vh;
-}
-
-.nextprev a:hover {
-    text-decoration: none;
-}
-
 /* copyright */
 
 .copy {
@@ -843,14 +806,681 @@ div .carousel-control-next {
 }
 
 /* Adjust column widths for smaller screens */
+
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
     .column {
         flex-basis: 50%; /* Two columns */
     }
+
+    body {
+        font-size: 24px;
+    }
+
+    h1 {
+        font-size: 44px;
+        margin-bottom: 32px;
+    }
+
+    h2 {
+        font-size: 30px;
+        margin-top: -18px;
+        margin-bottom: 32px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    /* sidebar */
+    
+    .container1 {
+        padding-top: 22px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 14px;
+        }
+        
+        .nav {
+        font-size: 22px;
+        margin-bottom: 38px;
+        }
+        
+        .nav a {
+        margin-right: 38px;
+        }
+        
+        .sidebar p {
+        margin-bottom: 22px;
+        }
+        
+        .footer {
+        font-size: 18px;
+        }
+
+        /* sidebar */
+    
+    .container1 {
+        padding-top: 16px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 8px;
+        }
+        
+        .nav {
+        font-size: 20px;
+        margin-bottom: 32px;
+        }
+        
+        .nav a {
+        margin-right: 32px;
+        }
+        
+        .sidebar p {
+        margin-bottom: 16px;
+        }
+        
+        .footer {
+        font-size: 18px;
+        }
+    
+        /* main home */
+        
+        .container2 {
+        padding-top: 22px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+        }
+        
+        .buttons {
+        margin-bottom: 22px;
+        }
+        
+        .buttons button {
+        font-size: 20px;
+        margin-right: 6px;
+        margin-bottom: 10px;
+        border: 2px solid #2500F5;
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        }
+        
+        .selworks {
+        margin-bottom: 30px;
+        font-size: 30px;
+        }
+
+        /* singolo progetto */
+        
+        .progetto {
+        padding-right: 30px;
+        padding-bottom: 22px;
+        }
+        
+        .nomeprogetto {
+        font-size: 34px;
+        padding-bottom: 14px;
+        }
+        
+        .riassunto {
+        font-size: 20px;
+        padding-bottom: 14px;
+        }
+        
+        .tags {
+        padding-top: 14px;
+        font-size: 20px;
+        }
+        
+        .copy {
+        font-size: 18px;
+        padding-right: 30px;
+        margin-left: -30px;
+        padding-left: 30px;
+        padding-top: 16px;
+        margin-top: 14px;
+        border-top: 2px solid black;
+        }
+
+        /* main progetti */
+    
+    .tag-prog {
+        font-size: 20px;
+        border: 2px solid #2500F5;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        margin-bottom: 14px;
+    }
+    
+    .container3 {
+        padding: 30px;
+    }
+    
+    .container p {
+        margin-bottom: 30px;
+    }
+    
+    .file {
+        padding-bottom: 38px;
+        padding-top: 14px;
+    }
+    
+    .protocol {
+        padding-bottom: 22px;
+    }
+    
+    .dida {
+        font-size: 22px;
+        margin-top: -22px;}
+        
+    .info {
+        border: 2px solid #2500F5;
+        font-size: 28px;
+        border-bottom: none;
+    }
+        
+    .last {
+        margin-bottom: 46px;
+        border: 2px solid #2500F5;
+        border-right: none;;
+        font-size: 22px;
+    }
+    
+    .skills, .team {
+        padding: 11px;
+        border-right: 2px solid #2500F5;
+    }
+    
+    .contributo {
+        padding: 11px;
+        margin-bottom: 30px;
+        border: 2px solid #2500F5;
+        border-top: none;
+        font-size: 22px;
+    }
+    
+    .riga {
+        padding: 11px;
+        border-bottom: 2px solid #2500F5;
+    }
+    
+    .right {
+        padding: 11px;
+        border-left: 2px solid #2500F5;
+        border-bottom: 2px solid #2500F5;
+        font-size: 20px;
+    }
+    
+    .goal p {
+        font-size: 38px;
+    }
+    
+    .goal {
+        margin-left: -30px;
+        margin-right: -30px;
+        margin-top: 62px;
+        margin-bottom: 62px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 36px;
+        padding-bottom: 20px;
+        border-top: 2px solid #2500F5;
+        border-bottom: 2px solid #2500F5;
+    }
+    
+    .research-question {
+        font-size: 30px;
+    }
+    
+    .result p {
+        font-size: 38px;
+    }
+    
+    .result {
+        margin-left: -30px;
+        margin-right: -30px;
+        margin-top: 62px;
+        margin-bottom: 62px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 36px;
+        padding-bottom: 20px;
+        border-top: 2px solid #2500F5;
+        border-bottom: 2px solid #2500F5;
+    }
+    
+    ol {
+        font-size: 30px;
+    }
+    
+    .hunty-stories {
+        padding: 46px;
+         margin-bottom: 30px;
+        }
+        
+    .navigation {
+        margin-bottom: 30px;
+    }
+        
+    .navigation-prog {
+        border: solid 2px #2500f5;
+        padding: 14px;
+        font-size: 22px;
+    }
+        
+    .navigation-prog-img {
+        margin-top: 14px;
+        margin-bottom: 14px;
+    }
+        
+    .navigation-prog-skills {
+        font-size: 18px;
+    }
+
+    .copy-prog {
+        font-size: 18px;
+        margin-left: -30px;
+        margin-right: -30px;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-top: 18px;
+        margin-top: 14px;
+        border-top: 2px solid black;
+      }
+
+      /* main CV */
+
+.container4 div {
+    border-bottom: solid 2px #2500F5;
+    padding: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.data {
+    font-size: 16px;
+}
+
+.titolo {
+    font-size: 30px;
+}
+
+.container4 ul {
+    padding-left: 22px;
+}
+
+.tool {
+    font-size: 20px;
+        border: 2px solid black;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        margin-bottom: 14px;
+}
+
+.technicalskills {
+    margin-top: 14px;
+}
+
+.copy-cv {
+    font-size: 18px;
+    padding-top: 18px;
+    margin-bottom: 30px;
+    border-top: 2px solid black;
+  }
+
+  /* gallery */
+
+ .carousel-wrapper {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border: 2px solid #2500F5;
+ }
+
+.carousel-item p {
+    font-size: 18px;
+    border-top: 2px solid #2500F5;
+    padding: 6px;
+}
+
+div .carousel-control-prev {
+    border-right: 2px solid #2500F5;
+    font-size: 18px;
+}
+
+div .carousel-control-next {
+    border-left: 2px solid #2500F5;
+    font-size: 18px;
+}
+        
 }
 
 @media only screen and (max-width: 768px) {
     .column {
         flex-basis: 100%; /* One column */
     }
+
+    body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 38px;
+        margin-bottom: 26px;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-top: -12px;
+        margin-bottom: 26px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    /* sidebar */
+    
+    .container1 {
+    padding-top: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 8px;
+    }
+    
+    .nav {
+    font-size: 16px;
+    margin-bottom: 32px;
+    }
+    
+    .nav a {
+    margin-right: 32px;
+    }
+    
+    .sidebar p {
+    margin-bottom: 16px;
+    }
+    
+    .footer {
+    font-size: 12px;
+    }
+
+    /* main home */
+    
+    .container2 {
+    padding-top: 16px;
+    padding-left: 24px;
+    padding-bottom: 24px;
+    }
+    
+    .buttons {
+    margin-bottom: 16px;
+    }
+    
+    .buttons button {
+    font-size: 14px;
+    margin-right: 2px;
+    margin-bottom: 8px;
+    border: 1.5px solid #2500F5;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    }
+    
+    .selworks {
+    margin-bottom: 24px;
+    font-size: 24px;
+    }
+
+    /* singolo progetto */
+    
+    .progetto {
+    padding-right: 24px;
+    padding-bottom: 16px;
+    }
+    
+    .nomeprogetto {
+    font-size: 28px;
+    padding-bottom: 8px;
+    }
+    
+    .riassunto {
+    font-size: 16px;
+    padding-bottom: 8px;
+    }
+    
+    .tags {
+    padding-top: 8px;
+    font-size: 16px;
+    }
+    
+    .copy {
+    font-size: 12px;
+    padding-right: 24px;
+    margin-left: -24px;
+    padding-left: 24px;
+    padding-top: 10px;
+    margin-top: 8px;
+    border-top: 1.5px solid black;
+    }
+
+    /* main progetti */
+    
+    .tag-prog {
+        font-size: 14px;
+        border: 1.5px solid #2500F5;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        margin-bottom: 8px;
+    }
+    
+    .container3 {
+        padding: 24px;
+    }
+    
+    .container p {
+        margin-bottom: 24px;
+    }
+    
+    .file {
+        padding-bottom: 32px;
+        padding-top: 8px;
+    }
+    
+    .protocol {
+        padding-bottom: 16px;
+    }
+    
+    .dida {
+        font-size: 16px;
+        margin-top: -16px;}
+        
+    .info {
+        border: 1.5px solid #2500F5;
+        font-size: 18px;
+        border-bottom: none;
+    }
+        
+    .last {
+        margin-bottom: 40px;
+        border: 1.5px solid #2500F5;
+        border-right: none;;
+        font-size: 16px;
+    }
+    
+    .skills, .team {
+        padding: 5px;
+        border-right: 1.5px solid #2500F5;
+    }
+    
+    .contributo {
+        padding: 5px;
+        margin-bottom: 24px;
+        border: 1.5px solid #2500F5;
+        border-top: none;
+        font-size: 16px;
+    }
+    
+    .riga {
+        padding: 5px;
+        border-bottom: 1.5px solid #2500F5;
+    }
+    
+    .right {
+        padding: 5px;
+        border-left: 1.5px solid #2500F5;
+        border-bottom: 1.5px solid #2500F5;
+        font-size: 14px;
+    }
+    
+    .goal p {
+        font-size: 32px;
+    }
+    
+    .goal {
+        margin-left: -24px;
+        margin-right: -24px;
+        margin-top: 56px;
+        margin-bottom: 56px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 24px;
+        padding-bottom: 8px;
+        border-top: 1.5px solid #2500F5;
+        border-bottom: 1.5px solid #2500F5;
+    }
+    
+    .research-question {
+        font-size: 24px;
+    }
+    
+    .result p {
+        font-size: 32px;
+    }
+    
+    .result {
+        margin-left: -24px;
+        margin-right: -24px;
+        margin-top: 56px;
+        margin-bottom: 56px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 24px;
+        padding-bottom: 8px;
+        border-top: 1.5px solid #2500F5;
+        border-bottom: 1.5px solid #2500F5;
+    }
+    
+    ol {
+        font-size: 24px;
+    }
+    
+    .hunty-stories {
+        padding: 40px;
+         margin-bottom: 24px;
+        }
+        
+    .navigation {
+        margin-bottom: 24px;
+    }
+        
+    .navigation-prog {
+        border: solid 1.5px #2500f5;
+        padding: 8px;
+        font-size: 16px;
+    }
+        
+    .navigation-prog-img {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+        
+    .navigation-prog-skills {
+        font-size: 12px;
+    }
+
+    .copy-prog {
+        font-size: 12px;
+        margin-left: -24px;
+        margin-right: -24px;
+        padding-right: 24px;
+        padding-left: 24px;
+        padding-top: 12px;
+        margin-top: 8px;
+        border-top: 1.5px solid black;
+      }
+
+      /* main CV */
+
+.container4 div {
+    border-bottom: solid 1.5px #2500F5;
+    padding: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.data {
+    font-size: 14px;
+}
+
+.titolo {
+    font-size: 24px;
+}
+
+.container4 ul {
+    padding-left: 16px;
+}
+
+.tool {
+    font-size: 14px;
+    border: 1.5px solid black;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-bottom: 8px;
+}
+
+.technicalskills {
+    margin-top: 8px;
+}
+
+.copy-cv {
+    font-size: 12px;
+    padding-top: 12px;
+    margin-bottom: 24px;
+    border-top: 1.5px solid black;
+  }
+
+  /* gallery */
+
+ .carousel-wrapper {
+    margin-right: 24px;
+    margin-bottom: 24px;
+    border: 1.5px solid #2500F5;
+ }
+
+.carousel-item p {
+    font-size: 12px;
+    border-top: 1.5px solid #2500F5;
+    padding: 4px;
+}
+
+div .carousel-control-prev {
+    border-right: 1.5px solid #2500F5;
+    font-size: 12px;
+}
+
+div .carousel-control-next {
+    border-left: 1.5px solid #2500F5;
+    font-size: 12px;
+}
+    
 }
