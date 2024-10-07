@@ -106,7 +106,7 @@
 
                         <div class="progetto" data-tags="Data Visualization and Information Design, UX/UI and Interaction Design, Qualitative Research">
                             <a href="non-sono-solo-immagini.html">
-                                    <div class="anno">(2022)</div>
+                                    <div class="anno">1</div>
                                     <div class="nomeprogetto">Non <i style="font-family: RF Dewi BI;">sono solo immagini</i></div>
                                     <div class="riassunto">A website to educate on image-based sexual abuse, displaying the main findings of my research on perpetrators' online language through data visualization.</div>
                                     <div class="hoverprogetto">
@@ -121,7 +121,7 @@
 
                         <div class="progetto" data-tags="Data Visualization and Information Design, Printed and Editorial Design">
                             <a href="integrated-report-for-museo-egizio.html">
-                                    <div class="anno">(2021)</div>
+                                    <div class="anno">2</div>
                                     <div class="nomeprogetto">Integrated Report of Museo Egizio</i></div>
                                     <div class="riassunto">A report featuring eye-catching visualizations to highlight the museum’s value-generating activities and provide a comprehensive view of its operations.</div>
                                     <div class="hoverprogetto">
@@ -134,7 +134,7 @@
 
                         <div class="progetto" data-tags="Data Visualization and Information Design, Printed and Editorial Design">
                             <a href="dashboards-for-GEDI-journals.html">
-                                    <div class="anno">(2021)</div>
+                                    <div class="anno">3</div>
                                     <div class="nomeprogetto">Dashboards for GEDI journals</div>
                                     <div class="riassunto">A series of printed dashboards for Italian newspapers, providing clear overviews of various topics.</div>
                                     <div class="hoverprogetto">
@@ -147,7 +147,7 @@
 
                         <div class="progetto" data-tags="Data Visualization and Information Design, Printed and Editorial Design">
                             <a href="red-blood-tomatoes.html">
-                                    <div class="anno">(2020)</div>
+                                    <div class="anno">4</div>
                                     <div class="nomeprogetto">Red Blood Tomatoes</div>
                                     <div class="riassunto">An infopoetry that sheds light on the inhumane conditions faced by underpaid agricultural workers through the physical manipulation of a custom-made chopped tomato can.</div>
                                     <div class="hoverprogetto">
@@ -160,7 +160,7 @@
 
                         <div class="progetto" data-tags="UX/UI and Interaction Design, Game Design">
                             <a href="law-of-the-jungle.html">
-                                    <div class="anno">(2020)</div>
+                                    <div class="anno">5</div>
                                     <div class="nomeprogetto">Law of the Jungle</div>
                                     <div class="riassunto">An experimental digital artifact designed as a quiz game that highlights the ambiguity of Instagram's nudity policy.</div>
                                     <div class="hoverprogetto">
@@ -175,7 +175,7 @@
 
                         <div class="progetto" data-tags="Data Visualization and Information Design, UX/UI and Interaction Design, Qualitative Research">
                             <a href="making-the-invisible-visible.html">
-                                    <div class="anno">(2020)</div>
+                                    <div class="anno">6</div>
                                     <div class="nomeprogetto">Making the Invisible Visible</div>
                                     <div class="riassunto">A website showcasing the results of research on online censorship through eight interactive visualizations.</div>
                                     <div class="hoverprogetto">
@@ -190,7 +190,7 @@
 
                         <div class="progetto" data-tags="UX/UI and Interaction Design, Game Design, Printed and Editorial Design, Communication Campaign Design">
                             <a href="esc.html">
-                                    <div class="anno">(2019)</div>
+                                    <div class="anno">7</div>
                                     <div class="nomeprogetto">Esc</div>
                                     <div class="riassunto">A location-based mobile game that guides players through the Bovisa suburban neighborhood by interacting with local community realities and in-game characters.</div>
                                     <div class="hoverprogetto">
@@ -203,7 +203,7 @@
 
                         <div class="progetto" data-tags="UX/UI and Interaction Design">
                             <a href="hunty.html">
-                                    <div class="anno">(2019)</div>
+                                    <div class="anno">8</div>
                                     <div class="nomeprogetto">Hunty</div>
                                     <div class="riassunto">An IoT cape that assists children in playfully confronting their fears through games and wearable sensors.</div>
                                     <div class="hoverprogetto">
@@ -218,7 +218,7 @@
 
                         <div class="progetto" data-tags="Printed and Editorial Design, Communication Campaign Design">
                             <a href="spring-off-the-wall.html">
-                                    <div class="anno">(2018)</div>
+                                    <div class="anno">9</div>
                                     <div class="nomeprogetto">Spring Off the Wall</div>
                                     <div class="riassunto">An event and its communication campaign designed for Vans for Milan Design Week 2018.</div>
                                     <div class="hoverprogetto">
@@ -253,67 +253,83 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     
     <script>
-
-document.addEventListener("DOMContentLoaded", function() {
-    const buttons = document.querySelectorAll(".buttons button");
-    const projects = document.querySelectorAll(".progetto");
-    const columns = document.querySelectorAll(".column");
-    const noResultsMessage = document.querySelector(".no-results");
-
-    buttons.forEach(button => {
-        button.addEventListener("click", function() {
-            this.classList.toggle("active");
-            filterProjects();
-        });
-    });
-
-    function filterProjects() {
-        const activeFilters = Array.from(buttons)
-            .filter(button => button.classList.contains("active"))
-            .map(button => button.getAttribute("data-filter"));
-
-        let hasVisibleProjects = false;
-
-        projects.forEach(project => {
-            const projectTags = project.getAttribute("data-tags").split(", ");
-            const isVisible = activeFilters.every(filter => projectTags.includes(filter));
-            project.style.display = isVisible ? "block" : "none";
-            if (isVisible) hasVisibleProjects = true;
-
-            // Handle autoplay for videos
-            const video = project.querySelector("video");
-            if (video) {
-                if (isVisible) {
-                    video.play();
+        document.addEventListener("DOMContentLoaded", function() {
+            const buttons = document.querySelectorAll(".buttons button");
+            const projects = document.querySelectorAll(".progetto");
+            const columns = document.querySelectorAll(".column");
+            const noResultsMessage = document.querySelector(".no-results");
+        
+            buttons.forEach(button => {
+                button.addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    filterProjects();
+                });
+            });
+        
+            function filterProjects() {
+                const activeFilters = Array.from(buttons)
+                    .filter(button => button.classList.contains("active"))
+                    .map(button => button.getAttribute("data-filter"));
+        
+                let hasVisibleProjects = false;
+        
+                projects.forEach(project => {
+                    const projectTags = project.getAttribute("data-tags").split(", ");
+                    const isVisible = activeFilters.length === 0 || activeFilters.every(filter => projectTags.includes(filter));
+                    project.style.display = isVisible ? "block" : "none";
+                    if (isVisible) hasVisibleProjects = true;
+        
+                    // Handle autoplay for videos
+                    const video = project.querySelector("video");
+                    if (video) {
+                        if (isVisible) {
+                            video.play();
+                        } else {
+                            video.pause();
+                            video.currentTime = 0; // Reset video
+                        }
+                    }
+                });
+        
+                arrangeInOrder();
+        
+                // Show or hide the "no results" message
+                noResultsMessage.style.display = hasVisibleProjects ? "none" : "block";
+            }
+        
+            function arrangeInOrder() {
+                // Convert projects to an array and filter the visible ones
+                const visibleProjects = Array.from(projects).filter(project => project.style.display !== "none");
+        
+                // Sort projects based on their "anno" value in ascending order
+                visibleProjects.sort((a, b) => {
+                    const annoA = parseInt(a.querySelector(".anno").textContent);
+                    const annoB = parseInt(b.querySelector(".anno").textContent);
+                    return annoA - annoB; // Ascending order
+                });
+        
+                // Clear the columns
+                columns.forEach(column => {
+                    column.innerHTML = "";
+                });
+        
+                if (columns.length === 1) {
+                    // If there is only one column, append all projects in ascending order
+                    visibleProjects.forEach(project => {
+                        columns[0].appendChild(project);
+                    });
                 } else {
-                    video.pause();
-                    video.currentTime = 0; // Reset video
+                    // Distribute projects left to right in columns
+                    visibleProjects.forEach((project, index) => {
+                        columns[index % columns.length].appendChild(project);
+                    });
                 }
             }
+        
+            filterProjects(); // Initial call to display projects correctly
+            window.addEventListener("resize", arrangeInOrder);
         });
-
-        arrangeInColumns();
-
-        // Show or hide the "no results" message
-        noResultsMessage.style.display = hasVisibleProjects ? "none" : "block";
-    }
-
-    function arrangeInColumns() {
-        const visibleProjects = Array.from(projects).filter(project => project.style.display !== "none");
-
-        columns.forEach(column => {
-            column.innerHTML = "";
-        });
-
-        visibleProjects.forEach((project, index) => {
-            columns[index % columns.length].appendChild(project);
-        });
-    }
-
-    filterProjects(); // Initial call to display projects correctly
-    window.addEventListener("resize", arrangeInColumns);
-});
-    </script>
+        </script>        
 
 <script type="application/ld+json">
     {
