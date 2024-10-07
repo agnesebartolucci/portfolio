@@ -254,81 +254,80 @@
     
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            const buttons = document.querySelectorAll(".buttons button");
-            const projects = document.querySelectorAll(".progetto");
-            const columns = document.querySelectorAll(".column");
-            const noResultsMessage = document.querySelector(".no-results");
-        
-            buttons.forEach(button => {
-                button.addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    filterProjects();
-                });
-            });
-        
-            function filterProjects() {
-                const activeFilters = Array.from(buttons)
-                    .filter(button => button.classList.contains("active"))
-                    .map(button => button.getAttribute("data-filter"));
-        
-                let hasVisibleProjects = false;
-        
-                projects.forEach(project => {
-                    const projectTags = project.getAttribute("data-tags").split(", ");
-                    const isVisible = activeFilters.length === 0 || activeFilters.every(filter => projectTags.includes(filter));
-                    project.style.display = isVisible ? "block" : "none";
-                    if (isVisible) hasVisibleProjects = true;
-        
-                    // Handle autoplay for videos
-                    const video = project.querySelector("video");
-                    if (video) {
-                        if (isVisible) {
-                            video.play();
-                        } else {
-                            video.pause();
-                            video.currentTime = 0; // Reset video
-                        }
-                    }
-                });
-        
-                arrangeInOrder();
-        
-                // Show or hide the "no results" message
-                noResultsMessage.style.display = hasVisibleProjects ? "none" : "block";
-            }
-        
-            function arrangeInOrder() {
-                // Convert projects to an array and filter the visible ones
-                const visibleProjects = Array.from(projects).filter(project => project.style.display !== "none");
-        
-                // Sort projects based on their "anno" value in ascending order
-                visibleProjects.sort((a, b) => {
-                    const annoA = parseInt(a.querySelector(".anno").textContent);
-                    const annoB = parseInt(b.querySelector(".anno").textContent);
-                    return annoA - annoB; // Ascending order
-                });
-        
-                // Clear the columns
-                columns.forEach(column => {
-                    column.innerHTML = "";
-                });
-        
-                if (columns.length === 1) {
-                    // If there is only one column, append all projects in ascending order
-                    visibleProjects.forEach(project => {
-                        columns[0].appendChild(project);
-                    });
+    const buttons = document.querySelectorAll(".buttons button");
+    const projects = Array.from(document.querySelectorAll(".progetto"));
+    const columns = document.querySelectorAll(".column");
+    const noResultsMessage = document.querySelector(".no-results");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", function() {
+            this.classList.toggle("active");
+            filterProjects();
+        });
+    });
+
+    function filterProjects() {
+        const activeFilters = Array.from(buttons)
+            .filter(button => button.classList.contains("active"))
+            .map(button => button.getAttribute("data-filter"));
+
+        let hasVisibleProjects = false;
+
+        projects.forEach(project => {
+            const projectTags = project.getAttribute("data-tags").split(", ");
+            const isVisible = activeFilters.length === 0 || activeFilters.every(filter => projectTags.includes(filter));
+            project.style.display = isVisible ? "block" : "none";
+            if (isVisible) hasVisibleProjects = true;
+
+            // Handle autoplay for videos
+            const video = project.querySelector("video");
+            if (video) {
+                if (isVisible) {
+                    video.play();
                 } else {
-                    // Distribute projects left to right in columns
-                    visibleProjects.forEach((project, index) => {
-                        columns[index % columns.length].appendChild(project);
-                    });
+                    video.pause();
+                    video.currentTime = 0; // Reset video
                 }
             }
-        
-            filterProjects(); // Initial call to display projects correctly
-            window.addEventListener("resize", arrangeInOrder);
         });
+
+        arrangeInColumns();
+
+        // Show or hide the "no results" message
+        noResultsMessage.style.display = hasVisibleProjects ? "none" : "block";
+    }
+
+    function arrangeInColumns() {
+        const visibleProjects = projects.filter(project => project.style.display !== "none");
+
+        // Sort projects by .anno in ascending order
+        visibleProjects.sort((a, b) => {
+            const annoA = parseInt(a.querySelector(".anno").textContent);
+            const annoB = parseInt(b.querySelector(".anno").textContent);
+            return annoA - annoB;
+        });
+
+        // Clear all columns
+        columns.forEach(column => {
+            column.innerHTML = "";
+        });
+
+        if (window.innerWidth <= 768 || columns.length === 1) {
+            // Handle the one-column layout for smaller screens or when there's only one column
+            visibleProjects.forEach(project => {
+                columns[0].appendChild(project);
+            });
+        } else {
+            // For multiple columns, distribute projects evenly while maintaining the order
+            visibleProjects.forEach((project, index) => {
+                columns[index % columns.length].appendChild(project);
+            });
+        }
+    }
+
+    filterProjects(); // Initial call to display projects correctly
+    window.addEventListener("resize", arrangeInColumns);
+});
         </script>        
 
 <script type="application/ld+json">
